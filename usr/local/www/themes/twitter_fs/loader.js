@@ -110,7 +110,7 @@ jQuery(document).ready(function () {
     jQuery('#col2').css("float","left");
 
     // insert add/delete column buttons
-    jQuery('<br/><br/><div id=\"columnModifier\"><div style=\"float:left\"><div id =\"addCol\" style=\"float:left\"><img src=\"./themes/pfsense_ng_fs/images/icons/icon_plus.gif\" style=\"cursor:pointer\" alt=\"Click here to add a column\"/></div>&nbsp;Add column&nbsp;</div><div style=\"float:left\"><div id =\"delCol\" style=\"float:left\"><img src=\"./themes/pfsense_ng_fs/images/icons/icon_x.gif\" style=\"cursor:pointer\" alt=\"Click here to delete a column\"/></div>&nbsp;Delete column</div><div id=\"columnWarningText\" style=\"float:left; margin-left:5em\"></div><br/><br/>').insertBefore('#niftyOutter.fakeClass');
+    jQuery('<div id=\"columnModifier\"><div style=\"float:left\"><div id =\"addCol\" style=\"float:left\"><img src=\"./themes/pfsense_ng_fs/images/icons/icon_plus.gif\" style=\"cursor:pointer\" alt=\"Click here to add a column\"/></div>&nbsp;Add column&nbsp;</div><div style=\"float:left\"><div id =\"delCol\" style=\"float:left\"><img src=\"./themes/pfsense_ng_fs/images/icons/icon_x.gif\" style=\"cursor:pointer\" alt=\"Click here to delete a column\"/></div>&nbsp;Delete column</div><div id=\"columnWarningText\" style=\"float:left; margin-left:5em\"></div><br/><br/>').insertBefore('#niftyOutter.fakeClass');
 	
     // on click add a new column and change column widths
     jQuery('#addCol').click(function(){
