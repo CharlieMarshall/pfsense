@@ -208,11 +208,14 @@ jQuery( window ).resize(function()
 // function called after the browser has finished resizing
 function finishedResizing()
 {
+    if ( jQuery('#columnModifier').length > 0 ) // only perform resizing on the dashboard page
+    {
 	var colWidth = jQuery("#col1").width();
 	if( colWidth < specifiedColWidth ) // Columns width is too small to display all the columns properly so we delete some columns and resize the remaining columns    
 		resizeRmColumns(); // Check if we can delete any columns
 	else if( colWidth > specifiedColWidth ) // Columns width COULD display more columns properly    
 		resizeAddColumns(); // Check if we can add any columns
+    }
 };
 
 ///////////////// end widget code part 1 /////////////////////////
