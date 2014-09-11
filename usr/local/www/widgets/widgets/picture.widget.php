@@ -73,7 +73,7 @@ if($_POST) {
 
 <div id="picture-settings" class="widgetconfigdiv" style="display:none;">
 	<form action="/widgets/widgets/picture.widget.php" method="post" name="iforma" enctype="multipart/form-data">
-		<input name="pictfile" type="file" class="formfld unknown" id="pictfile" size="20" />
+		<input name="pictfile" type="file" class="formbtn" id="pictfile" size="20" />
 		<input id="submita" name="submita" type="submit" class="formbtn" value="Upload" /><br/>
 		<b>NOTE:</b> Best image size is 350x350 or smaller.
 	</form>
@@ -81,7 +81,7 @@ if($_POST) {
 
 <div id="picture-widgets" style="padding: 5px">
 	<a href='/widgets/widgets/picture.widget.php?getpic=true' target='_blank'>
-		<img border="0" width="350" height="350" src="/widgets/widgets/picture.widget.php?getpic=true" alt="picture" />
+		<img border="0" width="100%" height="100%" src="/widgets/widgets/picture.widget.php?getpic=true" alt="picture" />
 	</a>
 </div>											 
 
